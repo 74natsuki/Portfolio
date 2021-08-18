@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    color: #264653;
+    font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+body,
+div,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+img,
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-nav {
+    background-color: white;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.header-list {
+    padding: 30px 50px;
+}
+
+.header-list a {
+    color: #264653;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#menu-icon {
+    display: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 1.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(38, 70, 83, 0.7);
+}
+
+.sp-header-nav {
+    display: none;
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    z-index: 10;
+    background-color: rgba(38, 70, 83, 0.7);
+    padding: 20px 20px 10px 20px;
+}
+
+.sp-header-menu {
+    list-style: none;
+}
+
+.sp-header-list {
+    margin-bottom: 10px;
+}
+
+.sp-header-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.top-wrapper {
+    position: relative;
+}
+
+.top-img {
+    padding-left: 15%;
+}
+
+.top-title {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: white;
+}
+
+.tt1,
+.tt2 {
+    background-color: #e9c46a;
+    padding: 0 20px;
+}
+
+.tt1 {
+    letter-spacing: 0.1em;
+}
+
+.tt2 {
+    margin-top: 20px;
+    display: inline-block;
+    letter-spacing: 0.2em;
+}
+
+.midashi {
+    text-align: center;
+    color: #264653;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.profile-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-img {
+    width: 45%;
+    padding-left: 100px;
+}
+
+.profile-textbox {
+    width: 45%;
+    padding-right: 100px;
+}
+
+.profile-textbox p {
+    margin-bottom: 15px;
+}
+
+.spbr {
+    display: none;
+}
+
+.profile-name {
+    font-size: 1.3em;
+    padding-bottom: 15px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(42, 157, 143, 0.7);
+    padding: 50px;
+}
+
+.skill {
+    width: 30%;
+    text-align: center;
+}
+
+.skill i {
+    font-size: 5em;
+    margin: 20px 0;
+}
+
+.skill p {
+    padding: 0 20px;
+}
+
+#work-wrapper {
+    margin-bottom: 200px;
+}
+
+.works {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(42, 157, 143, 0.7);
+    padding: 50px;
+}
+
+.work {
+    width: 30%;
+}
+
+.work-img {
+    position: relative;
+}
+
+.mask {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+}
+
+.caption {
+    padding-top: 80px;
+    text-align: left;
+    color: white;
+}
+
+.source {
+    font-size: 0.7em;
+}
+
+.source a {
+    color: black;
+    text-decoration: underline;
+}
+
+#contact-wrapper {
+    background-color: #264653;
+}
+
+#contact-wrapper h1 {
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+#contact-wrapper p {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+input {
+    height: 50px;
+}
+
+textarea {
+    padding-top: 15px;
+}
+
+button {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    background-color: #e9c46a;
+    color: white;
+    font-size: 1.5em;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: #264653;
+    padding: 40px 0 20px 0;
+}
+
+.copy-right p {
+    font-size: 0.7em;
+}
+
+.page-top {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.page-top:hover {
+    background-color: rgba(38, 70, 83, 0.7);
+    border-radius: 5px;
+}
+
+.page-top i {
+    color: black;
+    background-color: rgba(38, 70, 83, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+}
