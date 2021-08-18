@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Natsuki Portfolio</title>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <ul class="header-menu">
+                <li class="header-list"><a href="#profile-wrapper">Profile</a></li>
+                <li class="header-list"><a href="#slill-wrapper">Skills</a></li>
+                <li class="header-list"><a href="#work-wrapper">Works</a></li>
+                <li class="header-list"><a href="#contact-wrapper">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- spナビアイコン -->
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <!-- spナビ -->
+        <nav class="sp-header-nav">
+            <ul class="sp-header-menu">
+                <li class="sp-header-list"><a href="#profile-wrapper">Profile</a></li>
+                <li class="sp-header-list"><a href="#slill-wrapper">Skills</a></li>
+                <li class="sp-header-list"><a href="#work-wrapper">Works</a></li>
+                <li class="sp-header-list"><a href="#contact-wrapper">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="top-wrapper container">
+        <div class="top-img">
+            <img src="img/summer-kominka-train.jpg" alt="トップ背景画像">
+        </div>
+        <div class="top-title">
+            <h1 class="tt1">Natsuki&ensp;Kitazato</h1>
+            <h1 class="tt2">Portfolio</h1>
+        </div>
+    </div>
+
+    <div id="profile-wrapper" class="container">
+        <h1 class="midashi">Profile</h1>
+        <div class="profile-flex">
+            <div class="profile-img">
+                <img src="img/profile.jpg" alt="プロフィール画像">
+            </div>
+            <div class="profile-textbox">
+                <p class="profile-name">北里 夏毅 / Natsuki Kitazato</p>
+                <p>1995年生まれ&ensp;<br class="spbr">熊本出身→広島→東京在住</p>
+                <p>新卒で人材会社に入社。</p>
+                <p>3年間法人営業を担当。<br class="spbr">4年目に退職しフリーランスへ転向。</p>
+                <p>Web制作の経験は浅いですが、即レスと丁寧な仕事を心がけています。<br class="spbr">よろしくお願いいたします。</p>
+                <p>趣味：読書/サウナ/ラジオ/お酒</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="slill-wrapper" class="container">
+        <h1 class="midashi">Skills</h1>
+        <div class="skills">
+            <div class="skill">
+                <h2>HTML/CSS</h2>
+                <i class="fas fa-code"></i>
+                <p>ご希望のデバイスに沿ったレスポンシブ対応も可能です</p>
+            </div>
+            <div class="skill">
+                <h2>JavaScript</h2>
+                <i class="fab fa-js"></i>
+                <p>主にjQueryを用いて、Webページにアニメーションや効果をつけることができます</p>
+            </div>
+            <div class="skill">
+                <h2>WordPress</h2>
+                <i class="fab fa-wordpress"></i>
+                <p>WordPressテーマ作成、メンテナンス、プラグインの設置などができます</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="work-wrapper" class="container">
+        <h1 class="midashi">Works</h1>
+        <div class="works">
+            <!-- isara -->
+            <div class="work">
+                <div class="work-img">
+                    <img src="img/iSara-top.png" width="100%" height="100%">
+                    <a href="img/iSara-full.png" data-lity="data-lity">
+                        <div class="mask">
+                            <div class="caption">模写作品<br>isara.life制作LP</div>
+                        </div>
+                    </a>
+                </div>
+                <p class="source">出典：<a href="https://isara.life/">https://isara.life/</a></p>
+            </div>
+            <!-- clinic -->
+            <div class="work">
+                <div class="work-img">
+                    <img src="img/Clinic-top.png" width="100%" height="100%">
+                    <a href="img/clinic_full.png">
+                        <div class="mask">
+                            <div class="caption">模写作品<br>Clinic</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- progate -->
+            <div class="work">
+                <div class="work-img">
+                    <img src="img/Progate-top.png" width="100%" height="100%">
+                    <a href="img/progate_full.png">
+                        <div class="mask">
+                            <div class="caption">模写作品<br>Progate</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-wrapper">
+        <h1 class="midashi">Contact</h1>
+        <p>お問い合わせはこちら</p>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe9lPzFwcDDbHjwv0u4EfLaunse0ub7ihw9-cXRNPlMqvyICg/formResponse">
+            <input name="entry.2005620554" type="text" required="required" placeholder="name">
+            <input name="entry.1045781291" type="text" required="required" placeholder="e-mail">
+            <input name="entry.1065046570" type="text" required="required" placeholder="subject">
+            <textarea name="entry.1166974658" required="required" id="" cols="30" rows="10" placeholder="messages"></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <footer>
+        <div class="copy-right">
+            <p>©2021/Natsuki Kitazato/All Right Reserved</p>
+        </div>
+    </footer>
+
+    <div class="page-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
